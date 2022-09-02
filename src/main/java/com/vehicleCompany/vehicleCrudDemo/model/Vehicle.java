@@ -88,4 +88,13 @@ public class Vehicle {
 	public Vehicle() {
 	}
 
+
+
+	@Override
+	public String toString() {
+		return "Vehicle [vehicle_id=" + vehicle_id + ", vehicle_name=" + vehicle_name + ", vehicle_type=" + vehicle_type
+				+ ", vehicle_cost=" + vehicle_cost + "]";
+	}
+
+	
 }

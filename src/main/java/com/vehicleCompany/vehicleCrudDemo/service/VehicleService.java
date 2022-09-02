@@ -32,7 +32,7 @@ public class VehicleService implements VehicleServiceImpl {
 		
 		return vehicleRepository.save(vehicle);
 	}
-// Vehicle vehicle
+
 	@Override
 	public Vehicle updateVehicle(Vehicle vehicle) {
 		Optional<Vehicle> vehOptional = vehicleRepository.findById(vehicle.getVehicle_id());
@@ -40,7 +40,7 @@ public class VehicleService implements VehicleServiceImpl {
 			return vehicleRepository.save(vehicle);
 		}
 		else {
-			return null;
+			return null;	//Exception will be added
 		}
 	}
 
@@ -53,7 +53,7 @@ public class VehicleService implements VehicleServiceImpl {
 			 return veh;
 		}
 		else {
-			return null;
+			return null;	//Exception will be added
 		}
 	}
 

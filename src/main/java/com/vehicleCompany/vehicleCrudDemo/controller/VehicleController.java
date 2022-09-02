@@ -21,7 +21,8 @@ public class VehicleController {
 	
 	@Autowired
 	private VehicleService vehicleService;
-	
+
+//	http://localhost:8080/vehicle/get-all-vehicles
 	@GetMapping("/get-all-vehicles")
 	public List<Vehicle> getAllVehicles(){
 		return vehicleService.getAllVehicles();
